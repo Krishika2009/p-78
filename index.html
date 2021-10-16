@@ -1,0 +1,44 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://kbimages1-a.akamaihd.net/73c58c2c-c205-49ac-a745-86d25c8081ee/1200/1200/False/the-family-book.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Nanu (Satpal Kalra)",
+   "3. My Nani (Sharda Kalra)",
+   "4. My Sister (Nishtha Kalra)",
+   "5. Me (Krishika)",
+   "6. My Mother (Manisha Kalra)",
+   "7. My Mamu (Prince Kalra)",
+   "8. My Mami (Sneha Kalra)",
+   "9. My Brother (Aarush Kalra)",
+   ];
+ var images=[
+   "nanu.jpg",
+   "nani.jpg",
+   "sis.jpg",
+   "me.jpg",
+   "mom.jpg",
+   "mamu.jpg",
+   "mami.jpg",
+   "bro.jpg"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==8){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
